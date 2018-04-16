@@ -1,7 +1,5 @@
-<i>Disclaimer: This is an invite-only version of the RealEstateCore ontology.<br>
-It is work-in-progress and formal errors exists. <br>
+<i>Disclaimer: This is an invite-only version of the RealEstateCore ontology. It is work-in-progress and formal errors do exist. <br>
 Current version is based on merging the upper ontology, Core, with the modules Building and Device. <br>
-During April 2018, the modules AccessControl and Energy are expected to be added and the documentation should reflect the modularization.</i>
 
 <h2 id="intro" class="list">What is RealEstateCore? <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
@@ -24,22 +22,40 @@ Mappings to new standards are easy done by the user by adding an annotation (and
 <i>Note for this version: The mappings to other standards are annotations (e.g. "IFCComparable") and will be added to this documentation i upcoming revision</i>
 
 <h3 id="ns" class="list">The RealEstateCore consist of a set of modules and controlled vocabularies</h3>
-The moduls describe the specifics for a building like core (time, units etc.), building structure, and devices.
+The moduls describe the specifics for a building like core (time, units, agent, etc.), building structure, and devices in the current version. The purpose of using different domain ontologies is to facilitate customization for each user.
+<br>
+
+<img src="https://realestatecore.io/img/modules.jpg" style="border-width:0" alt="Modules" />
+<br>
+
+During April 2018, the modules AccessControl and Energy are expected to be added.</i>
+
 <br>
 The Schemas are the controlled vocabulary (similar to tags in Haystack) that enables the interoperability of data (e.g. that temperature data collected from different systems has the same name).
 
 <h3 id="ns" class="list">Openness – Share the knowledge in order to scale</h3>
 A consortium is formed with <a href='https://www.vasakronan.se'>Vasakronan AB</a>, <a href='https://www.akademiskahus.se'>Akademiska Hus AB</a>, <a href='https://klipsk.io'>Klipsk AB</a>, and <a href='https://www.willhem.se/'>Willhem AB</a> as the founders and main sponsors.
 <br>
+(links to logos on a row /img/vk_small.jp, /img/ah_small.jp, /img/klipsk_small.jp, /img/wh_small.jp) <br>
+<br>
 The purpose of the consortium is to create an environment for cooperation and sharing of knowledge between property owners and partners.
+
+The RealEstateCore Consortium is working together with Dr. Karl Hammar, Jönköping University, Sweden, (Pascal ...) to develop a toolchain for e.g. JSON-LD endpoints...
+
+See the roadmap here (link to http://realestatecore.io/roadmap.html)
 
 
 <h3 id="ns" class="list">How To Contribute?</h3>
 We encourage you to contribute to make the RealEstateCore better. Please point out bugs or peculiarities, add or extend modules and vocabularies, suggest improvements.
 Please use our <a href='https://github.com/RealEstateCore/Ontologies'>Github repo</a>. <br>
+<br>
+<br>
+See the <a href='http://realestatecore.io/roadmap.html'>Roadmap here</a>
+<br>
 
-(A <a href='https://gist.github.com/MarcDiethelm/7303312'>guide</a> for contributing on Github.)
 
+<h3>Specific notes</h3>
+Class, Properties, and Individuals are all presented in alphabetic order instead of being clustered in their domains or controlled vocabularies.
 
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
@@ -47,11 +63,8 @@ Please use our <a href='https://github.com/RealEstateCore/Ontologies'>Github rep
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<tr><td><b>Building</b></td><td>&lt;http://w3id.org/rec/Building/&gt;</td></tr>
-<tr><td><b>rec1</b></td><td>&lt;http://w3id.org/rec/0.1/&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
-<tr><td><b>Device</b></td><td>&lt;http://w3id.org/rec/Device/&gt;</td></tr>
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
 <tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://w3id.org/rec/&gt;</td></tr>
