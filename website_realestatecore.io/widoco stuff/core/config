@@ -2,9 +2,9 @@
 abstract=
 ontologyTitle=RealEstateCore
 ontologyPrefix=RealEstateCore
-ontologyNamespaceURI=http://w3id.org/rec/
+ontologyNamespaceURI=https://w3id.org/rec/
 ontologyName=RealEstateCore
-thisVersionURI=http://w3id.org/rec/core/2.2/
+thisVersionURI=https://w3id.org/rec/core/2.2/
 latestVersionURI=
 previousVersionURI=
 dateOfRelease=2018-05-31
