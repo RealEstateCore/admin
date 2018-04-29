@@ -1,0 +1,61 @@
+<h2 id="desc" class="list">RealEstateCore: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+Concepts used in the RealEstateCore ontology described briefly.<br>
+
+<div id="buildingstructure">
+<h3 id="ns" class="list">Building structure</h3>
+The highest level in the hierarchy is RealEstate that consist of BuildingStructure(s) and Land(s). RealEstate is the legal entity.<br>
+<br>
+A BuildingStructure consists of one or more BuildingStructureComponents.<br>
+<br>
+A BuildingStructureComponent can be: Room, Roof, Facade, VirtualComponent, etc.<br>
+<br>
+A VirtualComponent is a BuildingStructureComponent that not need to physically exist but is useful to attach data that are calculated or received from external sources (e.g. an energy meter reading from a utility company).<br>
+<br>
+Premises = a collection of Rooms or other spaces or objects that are leased to a tenant.<br>
+<br>
+StoreyLevel = a horizontally aligned collection of BuildingStructureComponents. Can be a popular name or a numbering.<br>
+</div>
+
+<div id="location">
+<h3 id="ns" class="list">Location</h3>
+Location is used to describe an object's or event's geographical placement.<br>
+<br>
+<i>locatedIn</i><br>
+An object that can describe its place by using [myObject-UUID] locatedIn 
+[myOtherObject-UUID], where [myOtherObject-UUID] could be a Room, BuildingStructure, etc.<br>
+<br>
+<i>locatedAt</i><br>
+An object that has an exact point on Earth (expressed in WGS84).<br>
+E.g. [myObject-UUID] locatedAt [lat;long;alt].<br>
+</div>
+
+<div id="device">
+<h3 id="ns" class="list">Device</h3>
+A Device is a thing made or adapted for a particular purpose, specifically a piece of electronic equipment.<br>
+<br>
+A Device has one or more Sensor(s) and/or Actuator(s) and/or other Device(s).<br>
+<br>
+A Sensor is a thing which detects or measures a physical property and records, indicates, or otherwise responds to it.<br>
+<br>
+An Actuator is a component that is responsible for moving and controlling a mechanism or system.<br>
+</div>
+
+<div id="observation">
+<h3 id="ns" class="list">Observation</h3>
+An Observation is made by a Sensor and <i>hasValue</i> and <i>hasObservationTime</i> and often also <i>hasMeasurmentUnit.</i><br>
+</div>
+
+<div id="quantitykind">
+<h3 id="ns" class="list">QuantityKind</h3>
+Describes the value observed by a Sensor or the value used by an Actuator.<br>
+<br>
+Core has a list of preset instances of different types of QuantityKinds (e.g. Power, Flow or Temperature) to define a controlled vocabulary.<br>
+</div>
+
+<div id="placementcontext">
+<h3 id="ns" class="list">PlacementContext</h3>
+In what context or media that the Sensor or Actuator is operating in. E.g in the SupplyAir or the ExhaustAir flow.<br>
+<br>
+Core has a list of preset instances of different types of PlacementContext (e.g. AirIntake, DistrictHeatingFlow or DistrictHeatingReturn) to define a controlled vocabulary.<br>
+</div>
