@@ -1,0 +1,31 @@
+All
+
+In:
+index-en.html
+
+1. Add in line 62
+<img src="http://git.realestatecore.io/img/RealEstateCore_LOGO_cmyk_black_small.png" alt="" /><br>
+
+2. Remove line 93-97 (Acknowledgments)
+
+3. Add GA in line 53
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119807023-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119807023-2');
+</script>
+
+
+In:
+
+
+
+
+REC-blue:
+47c1f1
+
