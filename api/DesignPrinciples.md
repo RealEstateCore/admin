@@ -23,3 +23,5 @@ As decided at the API development workshop held 2019-04-10 at Vasakronan (partic
 * The API will support some mechanism for synchronous calls throughout the whole system/stack, i.e., such that calling clients can call for an actuation and once that actuation has been carried out, be informed of this. How specifically this is implemented remains to be decided; options include but are not limited to:
   * Some callback reference being returned from the API upon reciept of a new Actuation object
   * Some predicate on Observation objects linking them to Actuation objects that caused said Observation
+* (LOW priority) -- The API will, in time, support modularity in the underlying ontology, e.g., such that implementers can choose which REC ontology modules to load. 
+* (LOW priority) -- The API will, in time, support multilinguality, i.e., such that users can request which language representations of string literals to return, and in which order.
